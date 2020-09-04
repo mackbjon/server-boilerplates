@@ -5,7 +5,7 @@
 
 <hr>
 
-## Get running quick
+## Quick Start
 
 #### 1. Clone base project folder
 
@@ -13,7 +13,7 @@
 git clone https://github.com/mackbjon/server-boilerplates.git --depth=1
 ```
 
-### 2. Navigate to app you desire & install dependencies
+#### 2. Navigate to app you desire & install dependencies
 
 Example below goes to simple express app
 
@@ -22,7 +22,7 @@ cd express/
 npm install
 ```
 
-### 3. Create .env file and add environment variables
+#### 3. Create .env file and add environment variables
 
 ```
 touch .env
@@ -35,7 +35,7 @@ NODE_ENV="development"
 PORT=4000
 ```
 
-### 4. Start development server
+#### 4. Start development server
 
 ```
 npm run dev
