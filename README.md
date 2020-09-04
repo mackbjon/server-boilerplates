@@ -7,7 +7,7 @@
 
 ## Get running quick
 
-### 1. Clone base project folder
+#### 1. Clone base project folder
 
 ```
 git clone https://github.com/mackbjon/server-boilerplates.git --depth=1
