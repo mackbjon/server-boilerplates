@@ -24,8 +24,8 @@ rm -rf .git
 
 ```
 cd express/
-npm install
 git init
+npm install
 ```
 
 #### 3. Create .env file and add environment variables
@@ -75,13 +75,15 @@ git commit -m "Initial commit"
 heroku create
 ```
 
-#### 4. Go live by pushing your app code to newly created Heroku app
+#### 4. Push your code to Heroku
 
 ```
 git push heroku master
 ```
 
-#### 5. Visit your app by navigating to URL in web browser
+<sub> Your app is now live and accessible via the web! </sub>
+
+#### 5. Run app by navigating to URL in web browser
 
 <sub> Find your app's web address with the following command </sub>
 
@@ -89,4 +91,4 @@ git push heroku master
 npm run app:info
 ```
 
-<sub> Your app's address will be listed after 'Web URL:' </sub>
+<sub> Your app's address will be listed after 'Web URL' </sub>
