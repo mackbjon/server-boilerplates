@@ -9,7 +9,7 @@
   <h2>Quick Start</h2>
 </div>
 
-#### 1. Initialize project by cloning repo and deleting existing git repo
+#### 1. Initialize project by cloning and then deleting existing git repo
 
 <sub> Do not forget to add the period '.' at the end of the 'git clone' command </sub>
 
@@ -20,7 +20,7 @@ git clone --depth=1 https://github.com/mackbjon/server-boilerplates.git .
 rm -rf .git
 ```
 
-#### 2. Navigate to simple express app, install dependencies and add git repo
+#### 2. Navigate to simple express app, add new git repo and install dependencies
 
 ```
 cd express/
@@ -34,7 +34,7 @@ npm install
 touch .env
 ```
 
-<sub> Add at minimum the following code to your .env file (PORT does not have to be 4000): </sub>
+<sub> Add the following code to your .env file (PORT does not have to be 4000): </sub>
 
 ```
 NODE_ENV="development"
@@ -59,7 +59,7 @@ npm run dev
 
 #### 2. Log-in to Heroku Client
 
-<sub> Pressing any key after the 'heroku login' command will take you to Heroku's website where you can log-in or sign-up if you do not already have an account </sub>
+<sub> Pressing any key after entering the 'heroku login' command will take you to Heroku's website where you can log-in or sign-up if you do not already have an account </sub>
 
 ```
 heroku login
@@ -69,7 +69,7 @@ heroku login
 
 #### 3. Make initial git commit and create Heroku app
 
-<sub> You will need to be in the folder where you initialized git repo e.g. my-simple-app/express/ </sub>
+<sub> You will need to be in the folder where you created a new git repo e.g., _my-simple-app/express/_ </sub>
 
 ```
 git add .
@@ -85,7 +85,7 @@ git push heroku master
 
 <sub> Your app is now live and accessible via the web! </sub>
 
-#### 5. Run app by navigating to URL in web browser
+#### 5. Navigate to app URL in web browser
 
 ```
 npm run app:info
