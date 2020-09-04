@@ -55,15 +55,17 @@ npm run dev
 
 #### 1. Install Heroku CLI if you have not already
 
-Download instructions for Heroku CLI
+[Download instructions for Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli)
 
 #### 2. Log-in to Heroku Client
 
-<sub> Pressing any key after the 'heroku login' command will take you to Heroku where you can log-in or sign-up if you do not already have an account </sub>
+<sub> Pressing any key after the 'heroku login' command will take you to Heroku's website where you can log-in or sign-up if you do not already have an account </sub>
 
 ```
 heroku login
 ```
+
+<sub> Once logged-in return to command line </sub>
 
 #### 3. Make initial git commit and create Heroku app
 
@@ -85,10 +87,8 @@ git push heroku master
 
 #### 5. Run app by navigating to URL in web browser
 
-<sub> Find your app's web address with the following command </sub>
-
 ```
 npm run app:info
 ```
 
-<sub> Your app's address will be listed after 'Web URL' </sub>
+<sub> Your app's address will be listed after 'Web URL'. Ctrl-Click to visit if in VSCode or copy/paste to web browser </sub>
