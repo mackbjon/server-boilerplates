@@ -1,0 +1,45 @@
+{
+  "name": "express-with-db",
+  "version": "1.0.0",
+  "description": "Boilerplate for a simple Express app configured for Postgres on Heroku",
+  "scripts": {
+    "start": "NODE_ENV=production node ./dist/main.js",
+    "start:dev": "nodemon --exec babel-node src/index.js",
+    "dev": "dotenv -- npm run start:dev",
+    "build": "webpack --mode=production",
+    "knex": "babel-node node_modules/.bin/knex",
+    "db": "dotenv -- npm run $npm_config_type",
+    "migrate": "npm run knex -- migrate:latest --knexfile=./src/data/knexfile.js",
+    "rollback": "npm run knex -- migrate:rollback --knexfile=./src/data/knexfile.js",
+    "seed": "npm run knex -- seed:run --knexfile=./src/data/knexfile.js",
+    "logs:prod": "heroku logs --tail",
+    "logs:dbprod": "heroku logs -p postgres -t",
+    "app:info": "heroku apps:info"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-server-express": "^2.17.0",
+    "express": "^4.17.1",
+    "knex": "^0.21.5",
+    "pg": "^8.3.3"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.10.5",
+    "@babel/core": "^7.11.4",
+    "@babel/node": "^7.10.5",
+    "@babel/preset-env": "^7.11.0",
+    "babel-loader": "^8.1.0",
+    "dotenv-cli": "^3.2.0",
+    "eslint": "^7.8.1",
+    "eslint-config-prettier": "^6.11.0",
+    "find-config": "^1.0.0",
+    "prettier": "2.1.1",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-node-externals": "^2.5.2"
+  },
+  "engines": {
+    "node": "12.8.x"
+  }
+}
