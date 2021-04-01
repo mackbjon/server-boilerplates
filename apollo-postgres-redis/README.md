@@ -20,10 +20,10 @@ git clone --depth=1 https://github.com/mackbjon/server-templates.git my-simple-a
 rm -rf .git
 ```
 
-#### 2. Navigate to simple express-postgres app, add new git repo and install dependencies
+#### 2. Navigate to simple apollo-postgres-redis app, add new git repo and install dependencies
 
 ```
-cd express-postgres/
+cd apollo-postgres-redis/
 git init
 npm install
 ```
