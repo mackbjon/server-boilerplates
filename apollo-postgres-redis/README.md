@@ -114,7 +114,7 @@ heroku config
 
 #### 8. Copy database URLs to your .env file
 
-<sub> Add the following code to your .env file (everything following 'postgres://' to be replaced with your DATABASE_URL string - and everything following '' to be replaced with your REDIS_URL string): </sub>
+<sub> Add the following code to your .env file (everything following 'postgres://' to be replaced with your DATABASE_URL string - and everything following 'redis://' to be replaced with your REDIS_URL string): </sub>
 
 ```
 TEST_DATABASE_URL="postgres://YOUR-DB-STRING-HERE"
