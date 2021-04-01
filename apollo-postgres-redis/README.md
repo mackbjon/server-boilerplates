@@ -147,7 +147,13 @@ npm run dev
 git push heroku master
 ```
 
-#### 2. Open your app in web browser
+#### 3. Ensure app has a worker process running
+
+```
+heroku ps:scale worker=1
+```
+
+#### 4. Open your app in web browser
 
 ```
 heroku open
