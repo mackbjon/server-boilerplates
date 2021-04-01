@@ -1,6 +1,6 @@
 <div align="center">
-  <h1>Simple Express+Postgres App</h1>
-  <p><h3 align="center">Ready-to-deploy Express+Postgres App jumping-off point for a variety of use cases</h3></p>
+  <h1>Express+Postgres+Redis App</h1>
+  <p><h3 align="center">Ready-to-deploy jumping-off point for a variety of use cases</h3></p>
 </div>
 
 <hr>
@@ -79,7 +79,7 @@ heroku create
 heroku addons:create heroku-postgresql:hobby-dev
 ```
 
-### 5. Add UUID Postgres extension
+#### 5. Add UUID Postgres extension
 
 <sub> While not mandatory, UUIDs are are a ubiquitous and essential feature of any database </sub>
 
@@ -96,7 +96,7 @@ CREATE EXTENSION "uuid-ossp";
 quit
 ```
 
-### . Create Redis database
+#### 6. Create Redis database
 
 ```
 heroku addons:create heroku-redis:hobby-dev
@@ -104,7 +104,7 @@ heroku addons:create heroku-redis:hobby-dev
 
 <sub> This may take a while </sub>
 
-#### . Get your newly created database URLs
+#### 7. Get your newly created database URLs
 
 <sub> The following command will expose the DATABASE_URL string - this begins with postgres:// - and your REDIS_URL string which begins with redis:// </sub>
 
@@ -112,16 +112,16 @@ heroku addons:create heroku-redis:hobby-dev
 heroku config
 ```
 
-#### . Copy database URLs to your .env file
+#### 8. Copy database URLs to your .env file
 
 <sub> Add the following code to your .env file (everything following 'postgres://' to be replaced with your DATABASE_URL string - and everything following '' to be replaced with your REDIS_URL string): </sub>
 
 ```
 TEST_DATABASE_URL="postgres://YOUR-DB-STRING-HERE"
-TEST_REDIS_URL="redis://"
+TEST_REDIS_URL="redis://YOUR-OTHER-DB-STRING-HERE"
 ```
 
-#### . Run migration, seed database and initialize Prisma client
+#### 9. Run migration, seed database and initialize Prisma client
 
 <sub> Modify src/data/migrations and src/data/seeds to suit your database needs </sub>
 
