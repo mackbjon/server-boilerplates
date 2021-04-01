@@ -1,5 +1,5 @@
 <div align="center">
-  <h1>Express+Postgres+Redis App</h1>
+  <h1>Apollo+Postgres+Redis App</h1>
   <p><h3 align="center">Ready-to-deploy jumping-off point for a variety of use cases</h3></p>
 </div>
 
