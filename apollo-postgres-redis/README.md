@@ -11,12 +11,8 @@
 
 #### 1. Initialize project by cloning and then deleting existing git repo
 
-<sub> Do not forget to add the period '.' at the end of the 'git clone' command </sub>
-
 ```
-mkdir my-simple-app
-cd my-simple-app
-git clone --depth=1 https://github.com/mackbjon/server-templates.git my-simple-app
+git clone --depth=1 https://github.com/mackbjon/server-templates.git *your-app-name*
 rm -rf .git
 ```
 
@@ -50,7 +46,7 @@ worker: npm run worker:dev
 ```
 
 <div align="center">
-  <h2>Create Cloud App, Databases and Initialize Data</h2>
+  <h2>Create Cloud App, Databases, and Initialize Data</h2>
 </div>
 
 #### 1. Install Heroku CLI if you have not already
@@ -133,13 +129,13 @@ npm run data:initDev
   <h2>Run App and Deploy to Cloud</h2>
 </div>
 
-#### 1. Make initial git commit and make sure development server runs correctly
+#### 1. Make initial git commit
 
 ```
 git add .
 git commit -m "Initial commit"
-npm run dev
 ```
+<sub> You are now able to optionally run your app on your current machine by entering: npm run dev </sub>
 
 #### 2. Push code to Heroku
 
@@ -147,7 +143,7 @@ npm run dev
 git push heroku master
 ```
 
-#### 3. Ensure app has a worker process running
+#### 3. Start worker process in cloud
 
 ```
 heroku ps:scale worker=1
